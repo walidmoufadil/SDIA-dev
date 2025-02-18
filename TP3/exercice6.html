@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function fibo1(n) {
+                let a = 0, b = 1;
+                for (let i = 0; i < n; i++) {
+                    [a, b] = [b, a + b];
+                }
+            return a;
+            }
+
+            const n = parseInt(prompt("Entrez le rang n pour calculer le nième terme de Fibonacci :"));
+            document.write(`<h3>Le terme ${n} de la suite de Fibonacci est : ${fibo1(n)}</h3>`);
+            function fibo2(valeur) {
+                let a = 0, b = 1, n = 1;
+                while (a <= valeur) {
+                    [a, b] = [b, a + b];
+                    n++;
+                }
+                return { terme: a, rang: n};
+            }
+            const valeur = parseInt(prompt("Entrez la valeur seuil pour trouver le premier terme de Fibonacci supérieur :"));
+            const { terme, rang } = fibo2(valeur);
+            document.write(`<h3>Le premier terme de Fibonacci supérieur à ${valeur} est ${terme} et il est en position ${rang}.</h3>`);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        function hjms(seconds) {
+        let jours = Math.floor(seconds / (24 * 3600));
+        seconds %= 24 * 3600;
+        let heures = Math.floor(seconds / 3600);
+        seconds %= 3600;
+        let minutes = Math.floor(seconds / 60);
+        let secondes = seconds % 60;
+
+        document.write(`<h2>Une durée en secondes : ${seconds}</h2>`);
+        document.write(`<h2>Cette durée équivaut à ${jours} jours ${heures} heures ${minutes} minutes ${secondes} secondes</h2>`);
+    }
+    function hjms_ameliore(seconds) {
+        let jours = Math.floor(seconds / (24 * 3600));
+        seconds %= 24 * 3600;
+        let heures = Math.floor(seconds / 3600);
+        seconds %= 3600;
+        let minutes = Math.floor(seconds / 60);
+        let secondes = seconds % 60;
+
+        document.write(`<h2>Une durée en secondes : ${seconds}</h2>`);
+        document.write(`<h2>Cette durée équivaut à ${jours ? `${jours} jours`:""} ${heures?`${heures} heures` : ""} ${minutes ? `${minutes} minutes` : ""} ${secondes ? `${secondes} secondes` : ""}</h2>`);
+    }
+
+        let duree = parseInt(prompt("Entrez une durée en secondes (s) :"));
+        hjms_ameliore(duree)
+        </script>
+    </body>
+</html>

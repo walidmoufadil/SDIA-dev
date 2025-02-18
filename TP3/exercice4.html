@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+
+        function triangle1(taille) {
+            let i = 1;
+            while (i <= taille) {
+                let j = 1;
+                while(j <= i){
+                    document.write('*');
+                    j++
+                }
+                document.write("<br>")
+                i++;
+            }
+        }
+
+        function triangle2(taille) {
+            for (let i = 1; i <= taille; i++) {
+                    document.write('*'.repeat(i));
+                    document.write("<br>"); 
+            }
+        }
+
+        function pyramide(taille) {
+            for (let i = 1; i <= taille; i++) {
+                let espaces = "&nbsp;".repeat((taille - i) * 2); // Espaces en HTML pour centrer
+                let etoiles = "*".repeat(2 * i - 1); // Calcul du nombre d'étoiles
+                document.write(espaces + etoiles + "<br>"); // Affichage avec saut de ligne
+            }
+        }   
+
+    let taille = parseInt(prompt("Donnez la taille du motif :"));
+    
+        
+        document.write("<h3>Motif avec while :</h3>");
+        triangle1(7);
+
+        document.write("<h3>Motif avec for :</h3>");
+        triangle2(7);
+
+        document.write("<h3> Pyramide :</h3>");
+        pyramide(7);
+
+        </script>
+    </body>
+</html>

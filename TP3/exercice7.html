@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcul de la racine carrée approchée</title>
+</head>
+<body>
+    <script>
+            function Raca1(A) {
+                if (A <= 0) {
+                    document.write("Le nombre A doit être positif.\n");
+                    return;
+                }
+
+       
+            let u = A / 2; 
+            const epsilon = 1e-10; 
+    
+            while (Math.abs(u * u - A) > epsilon) {
+                u = (u + A / u) / 2; 
+            }
+
+            document.write(`<h3>Valeur approchée de la racine carrée de ${A} est ${u}</h3>`);
+        }
+
+    const A = parseFloat(prompt("Entrez un nombre entre 1 et 100 pour calculer sa racine carrée approximée :"));
+    Raca1(A);
+
+    </script>
+</body>
+</html>

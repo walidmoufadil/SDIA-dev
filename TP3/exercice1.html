@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        function toTempC(tempF) {
+            const tempC = (5./9) * (tempF - 32)
+            document.write(`<h3>Une temperature en Fahrenheit : ${tempF}</h3>`)
+            document.write(`<h3>Cette temperature équivaut a  ${tempC.toFixed(2)} en degrés Celsius</h3>`)65
+        }
+        let tempF = parseFloat(prompt("Entrez une température en Fahrenheit :"));
+        toTempC(tempF);65
+        </script>
+    </body>
+</html>

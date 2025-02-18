@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+        function estPremier(n) {
+            if (n < 2) return false; 
+            for (let i = 2; i <= Math.sqrt(n); i++) { 
+                if (n % i === 0) {
+                    return i; 
+                }
+            }
+            return true; 
+        }
+        
+        let nombre = parseInt(prompt("Donnez un entier positif :"));
+        
+        if (isNaN(nombre) || nombre < 1) {
+            document.write("Veuillez entrer un entier positif valide.");
+        } else {
+            let resultat = estPremier(nombre);
+            if (resultat === true) {
+                document.write(nombre + " est un nombre premier.");
+            } else {
+                document.write(nombre + " n'est pas un nombre premier, il est divisible par " + resultat + ".");
+            }
+        }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+    
+        function troisNombres(a, b, c) {
+            let nombres = [a, b, c];
+            nombres.sort((x, y) => x - y);
+            document.write(`Les nombres dans l'ordre croissant : ${nombres.join(' ')}`);
+        }
+
+const n1 = prompt("Premier nombre")
+const n2 = prompt("Deuxieme nombre")
+const n3 = prompt("Troisieme nombre")
+troisNombres(n1, n2, n3);
+
+
+        </script>
+    </body>
+</html>
