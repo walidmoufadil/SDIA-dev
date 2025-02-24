@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #fff;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      header {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+      }
+
+      header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+      }
+
+      header nav ul li {
+        display: inline;
+      }
+
+      header nav ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+      }
+
+      .logo {
+        font-size: 80px;
+        font-weight: bold;
+        color: #4285f4;
+      }
+
+      .search-box {
+        margin-top: 20px;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      .search-box input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 24px;
+        border: 1px solid #dfe1e5;
+        outline: none;
+        font-size: 16px;
+      }
+
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      .buttons button {
+        background-color: #f8f9fa;
+        border: 1px solid #dfe1e5;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+
+      .buttons button:hover {
+        background-color: #f1f3f4;
+      }
+
+      .language {
+        margin-top: 20px;
+        font-size: 14px;
+      }
+
+      .language a {
+        color: #1a0dab;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Gmail</a></li>
+          <li><a href="#">Images</a></li>
+          <li><button style="background: #4285f4; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer;">Connexion</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="logo">Google</div>
+      <div class="search-box">
+        <input type="text" placeholder="Recherchez sur Google ou saisissez une URL" />
+      </div>
+      <div class="buttons">
+        <button>Recherche Google</button>
+      </div>
+      <div class="language">
+        Google disponible en : <a href="#">العربية</a>
+      </div>
+    </main>
+  </body>
+</html>
