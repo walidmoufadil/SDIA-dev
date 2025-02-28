@@ -53,9 +53,7 @@ Chaque application est développée en **HTML, CSS et JavaScript**.
 - Affichage du résultat après le calcul
 
 
-```
 ![Calculatrice Screenshot](./screenshots/mini-calculatrice.png)
-```
 
 ---
 
@@ -72,9 +70,7 @@ Chaque application est développée en **HTML, CSS et JavaScript**.
 - Un affichage du résultat et son interprétation
 
 
-```
 ![IMC Screenshot](./screenshots/IMC.png)
-```
 
 ---
 
@@ -89,9 +85,7 @@ Chaque application est développée en **HTML, CSS et JavaScript**.
 - Des boutons représentant les opérations mathématiques
 - Un champs pour l'affichage du résultat après le calcul
 
-```
 ![Calculatrice Screenshot](./screenshots/Calculatrice.png)
-```
 
 ---
 
