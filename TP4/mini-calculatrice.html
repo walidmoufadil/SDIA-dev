@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice Simple</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .calculator {
+            border: 2px solid #2c4050;
+            padding: 20px;
+            display: inline-block;
+            background: #eceff1;
+            border-radius: 10px;
+        }
+        input {
+            width: 100px;
+            padding: 8px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        button {
+            padding: 8px 12px;
+            margin: 5px;
+            background-color: #5d676b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #302c33;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Calculatrice Simple</h2>
+    <div class="calculator">
+        <input type="number" id="num1" placeholder="Nombre 1">
+        <input type="number" id="num2" placeholder="Nombre 2">
+        <input type="text" id="result" placeholder="Résultat" disabled>
+
+        <br>
+
+        <button onclick="calculer('+')">+</button>
+        <button onclick="calculer('-')">-</button>
+        <button onclick="calculer('*')">*</button>
+        <button onclick="calculer('/')">/</button>
+    </div>
+
+    <script>
+        function calculer(operateur) {
+            let n1 = parseFloat(document.getElementById("num1").value);
+            let n2 = parseFloat(document.getElementById("num2").value);
+            let resultat;
+
+            if (isNaN(n1) || isNaN(n2)) {
+                alert("Veuillez entrer des nombres valides !");
+                return;
+            }
+
+            switch (operateur) {
+                case '+':
+                    resultat = n1 + n2;
+                    break;
+                case '-':
+                    resultat = n1 - n2;
+                    break;
+                case '*':
+                    resultat = n1 * n2;
+                    break;
+                case '/':
+                    if (n2 === 0) {
+                        alert("Division par zéro impossible !");
+                        return;
+                    }
+                    resultat = n1 / n2;
+                    break;
+                default:
+                    alert("Opération non reconnue !");
+                    return;
+            }
+
+            document.getElementById("result").value = resultat;
+        }
+    </script>
+
+</body>
+</html>
