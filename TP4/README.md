@@ -37,9 +37,7 @@ Chaque application est développée en **HTML, CSS et JavaScript**.
 - Un bouton permettant de permuter les valeurs entre les deux champs
 
 
-```
 ![Permutation Screenshot](./screenshots/Permutation.png)
-```
 
 ---
 
