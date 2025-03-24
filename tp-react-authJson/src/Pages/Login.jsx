@@ -18,7 +18,7 @@ function Login() {
     
     try {
       await login(email, password);
-      navigate('/Navbar');
+      navigate('/dashboard');
     } catch (error) {
       setErrorMessage('Email ou mot de passe incorrect');
     } finally {

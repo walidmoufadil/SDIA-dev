@@ -15,11 +15,10 @@ function App() {
       <Router>
         <Routes>
 
-          <Route path="/" element={<Navigate to="/login" />} />
+          <Route path="/" element={<Navigate to="/dashboard" />} />
           <Route path="/logout" element={<Navigate to="/login" />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/Navbar" element={<Navbar />}/>
           
           <Route 
             path="/dashboard" 
