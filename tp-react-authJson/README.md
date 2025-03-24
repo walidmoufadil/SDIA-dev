@@ -64,6 +64,7 @@ Ce projet est une application React.js qui comprend :
 
 ### Dashboard
 ![Dashboard](src/assets/dashboard.png)
+![Dashboard](src/assets/dashboard_vp.png)
 
 
 ```
