@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@example.com",
+      "password": "admin123",
+      "name": "Admin User",
+      "role": "admin"
+    },
+    {
+      "email": "wmoufadil@gmail.com",
+      "password": "$2a$10$Q6evBFBLdQRw9niv3QbBsOiOJ8TXJ/G38.5v2baSBYmNRjZotidK2",
+      "name": "Moufadil Walid",
+      "id": 2
+    }
+  ]
+}
