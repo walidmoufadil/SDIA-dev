@@ -15,29 +15,6 @@ Ce projet est une application React.js qui comprend :
 - Tailwind CSS (ou autre framework CSS selon ton choix)
 - Axios (pour les requêtes API)
 
-## Installation
-### Prérequis
-- Node.js installé
-- npm ou yarn installé
-
-### Étapes d'installation
-1. Cloner le dépôt :
-   ```bash
-   git clone https://github.com/ton-repo.git
-   ```
-2. Accéder au dossier du projet :
-   ```bash
-   cd nom-du-projet
-   ```
-3. Installer les dépendances :
-   ```bash
-   npm install
-   ```
-   ou avec Yarn :
-   ```bash
-   yarn install
-   ```
-
 
 ## Fonctionnalités
 ### Authentification
